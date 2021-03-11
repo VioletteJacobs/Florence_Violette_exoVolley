@@ -21,9 +21,8 @@
             </li>
         </div>
       </nav>
-      <div style="background-image: url({{asset('/img/volley.jpeg')}})" >
+      <div style=" background-image: url({{asset('/img/volley2.jpeg')}})">
           <h1 class="text-center text-white">Volley Vio</h1>
-
       </div>
 
 </div>

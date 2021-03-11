@@ -81,7 +81,7 @@ class PlayerController extends Controller
      */
     public function show(Player $player)
     {
-        //
+        
     }
 
     /**
@@ -113,9 +113,15 @@ class PlayerController extends Controller
      * @param  \App\Models\Player  $player
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Player $player)
+    public function destroy($id)
     {
-        //
+        $destroy = Player::find($id);
+        $destroyPhoto = Photo::find($id);
+        Storage::delete("public/img/".$destroyPhoto->url);
+
+        $destroy->delete();
+        $destroyPhoto->delete();
+        return redirect("/");
     }
 
 }

@@ -94,8 +94,10 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Team $team)
+    public function destroy($id)
     {
-        //
+        $destroy = Team::find($id);
+        $destroy->delete();
+        return redirect("/");
     }
 }

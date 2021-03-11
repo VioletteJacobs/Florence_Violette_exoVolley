@@ -18,9 +18,15 @@
               <th scope="row">{{$item->id}}</th>
               <td>{{$item->name}}</td>
               <td>{{$item->city}}</td>
-              <td><a href="/team-show/{{$item->id}}" class="btn btn-primary">Show</a></td>
+              <td>
+                  <form action="/teams/{{$item->id}}" method="POST">
+                    @csrf
+                    @method("DELETE")
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+              </td>
+              <td><a href="" class="btn btn-primary">Show</a></td>
             </tr>
-                
             @endforeach
         </tbody>
       </table>
@@ -45,7 +51,14 @@
               <td>{{$item->name}}</td>
               <td>{{$item->firstname}}</td>
               <td>{{$item->role}}</td>
-              <td><a href="/player-show/{{$item->id}}" class="btn btn-primary">Show</a></td>
+              <td>
+                <form action="/players/{{$item->id}}" method="POST">
+                  @csrf
+                  @method("DELETE")
+                  <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
+            </td>
+              <td><a href="" class="btn btn-primary">Show</a></td>
             </tr>
                 
             @endforeach
