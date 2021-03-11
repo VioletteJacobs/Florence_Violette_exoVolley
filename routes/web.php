@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\TeamController;
+use App\Models\Player;
+use App\Models\Team;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $DBTeam = Team::all();
+    $DBPlayer = Player::all();
+    return view('welcome', compact("DBTeam", "DBPlayer"));
 });
 
 // Route::get('/createplayer', [PlayerController::class, "createplayer"]);

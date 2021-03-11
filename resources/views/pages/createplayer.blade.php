@@ -15,7 +15,7 @@
         @endif
 
         {{-- form player et photo --}}
-    <form action="/players" method="POST">
+    <form action="/players" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="">Name : </label>
@@ -50,7 +50,7 @@
             <input type="text" name="role">
         </div>
         <div class="form-group">
-            <label for="">Photo: </label>
+            <label for="url">Photo: </label>
             <input type="file" name="url">
         </div>
 
@@ -61,6 +61,7 @@
                 @endforeach
             </select>
         </div> --}}
+
         <button class="btn btn-success" type="submit">Submit</button>
     </form>
 

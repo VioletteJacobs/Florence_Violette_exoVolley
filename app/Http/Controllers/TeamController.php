@@ -40,7 +40,7 @@ class TeamController extends Controller
             "name" => "required|min:2|max:50",
             "city" => "required|min:2|max:50",
             "country" => "required|min:2|max:50",
-            "max" => "required|min:2|max:50",
+            "max" => "required|min:1|max:50",
 
         ]);
         $newEntry = new Team;
@@ -59,9 +59,10 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show(Team $team)
+    public function show($id)
     {
-        //
+        $show = Team::find($id);
+        return view ("pages.show.showteam", compact("show"));
     }
 
     /**

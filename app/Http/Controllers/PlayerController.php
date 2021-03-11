@@ -66,8 +66,8 @@ class PlayerController extends Controller
         $newEntry->gender = $request->gender;
         $newEntry->country = $request->country;
         $newEntry->role = $request->role;
-        // $newEntry->team_id = $storeteam->team_id;
-        $newEntry->photo_id = $storephoto->photo_id;
+        $newEntry->team_id = $request->team_id;
+        $newEntry->photo_id = $storephoto->id;
         $newEntry->save();
 
         return redirect()->back();
