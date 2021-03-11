@@ -9,6 +9,7 @@
             <th scope="col">Number</th>
             <th scope="col">Name</th>
             <th scope="col">City</th>
+            <th scope="col">delete</th>
             <th scope="col">Show</th>
           </tr>
         </thead>
@@ -25,7 +26,13 @@
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
               </td>
-              <td><a href="" class="btn btn-primary">Show</a></td>
+              <td>
+                <form action="/albums/{{$item->id}}" method="POST">
+                    @csrf
+                    @method("GET")
+                    <button class="btn btn-success" type="submit">Voir plus</button>
+                </form>
+            </td>
             </tr>
             @endforeach
         </tbody>
@@ -42,6 +49,8 @@
             <th scope="col">Name</th>
             <th scope="col">Firstname</th>
             <th scope="col">Role</th>
+            <th scope="col">delete</th>
+            <th scope="col">show</th>
           </tr>
         </thead>
         <tbody>
@@ -58,7 +67,13 @@
                   <button type="submit" class="btn btn-danger">Delete</button>
               </form>
             </td>
-              <td><a href="" class="btn btn-primary">Show</a></td>
+            <td>
+                <form action="/players/{{$item->id}}" method="POST">
+                    @csrf
+                    @method("GET")
+                    <button class="btn btn-success" type="submit">Voir plus</button>
+                </form>
+            </td>
             </tr>
                 
             @endforeach
