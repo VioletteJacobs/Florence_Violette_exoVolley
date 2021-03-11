@@ -24,7 +24,8 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+
+        return view("pages.createteam");
     }
 
     /**
@@ -35,7 +36,21 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validation = $request->validate([
+            "name" => "required|min:2|max:50",
+            "city" => "required|min:2|max:50",
+            "country" => "required|min:2|max:50",
+            "max" => "required|min:2|max:50",
+
+        ]);
+        $newEntry = new Team;
+        $newEntry->name = $request->name;
+        $newEntry->city = $request->city;
+        $newEntry->country = $request->country;
+        $newEntry->max = $request->max;
+        $newEntry->save();
+
+        return redirect()->back();
     }
 
     /**

@@ -17,7 +17,7 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->string("name", 50);
             $table->string("firstname", 50);
-            $table->string("age", 50);
+            $table->integer("age", 50);
             $table->string("phone", 50);
             $table->string("email", 50);
             $table->string("gender", 50);

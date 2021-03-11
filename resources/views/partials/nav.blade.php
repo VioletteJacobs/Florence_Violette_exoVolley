@@ -13,6 +13,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Dashboard</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/teams/create">Create Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/players/create">Create Player</a>
+            </li>
         </div>
       </nav>
       <div style="background-image: url({{asset('/img/volley.jpeg')}})" >

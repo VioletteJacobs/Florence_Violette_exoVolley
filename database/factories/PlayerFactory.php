@@ -22,10 +22,10 @@ class PlayerFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->firstName,
-            "surname" => $this->faker->surname,
-            "age" => $this->faker->numberBetween(25,89),
-            
+            // "name" => $this->faker->firstName,
+            // "surname" => $this->faker->surname,
+            // "age" => $this->faker->numberBetween(25,89),
+
         ];
     }
 }
