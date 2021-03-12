@@ -11,7 +11,7 @@
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
+              <a class="nav-link" href="/dashboard">Dashboard</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/teams/create">Create Team</a>
@@ -21,7 +21,7 @@
             </li>
         </div>
       </nav>
-      <div style=" background-image: url({{asset('/img/volley2.jpeg')}})">
+      <div style="background-image: url({{asset('/img/volley2.jpeg')}})">
           <h1 class="text-center text-white">Volley Vio</h1>
       </div>
 

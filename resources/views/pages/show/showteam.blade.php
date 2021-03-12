@@ -7,7 +7,7 @@
               <p class="card-text">{{$show->city}}</p>
               <p class="card-text">{{$show->country}}</p>
               <p class="card-text">{{$show->max}}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="/teams/{{$show->id}}/edit" class="btn btn-primary">Update</a>
             </div>
           </div>
     </section>

@@ -39,7 +39,11 @@
         </div>
         <div class="form-group">
             <label for="">Gender : </label>
-            <input type="text" name="gender">
+            <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="femal">Female</option>
+                <option value="other">Other</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="">Country : </label>
@@ -47,20 +51,26 @@
         </div>
         <div class="form-group">
             <label for="">Role : </label>
-            <input type="text" name="role">
+            <select name="role" id="">
+                <option value="back">Back</option>
+                <option value="center">Center</option>
+                <option value="front">Front</option>
+                <option value="replace">Replace</option>
+            </select>
         </div>
+
         <div class="form-group">
-            <label for="url">Photo: </label>
+            <label for="">Photo: </label>
             <input type="file" name="url">
         </div>
 
-        {{-- <div class="form-group">
+        <div class="form-group">
             <select name="team_id" id="">
                 @foreach ($DBTeam as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>
                 @endforeach
             </select>
-        </div> --}}
+        </div>
 
         <button class="btn btn-success" type="submit">Submit</button>
     </form>

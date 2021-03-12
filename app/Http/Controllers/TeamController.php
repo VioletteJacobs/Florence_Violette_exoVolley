@@ -71,9 +71,11 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function edit(Team $team)
+    public function edit($id)
     {
-        //
+        $DBTeam = Team::all();
+        $edit = Team::find($id);
+        return view("pages.edit.updateteam", compact("edit", "DBTeam"));
     }
 
     /**
@@ -83,9 +85,18 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Team $team)
+    public function update(Request $request, $id)
     {
-        //
+        $newEntry = Team::find($id);
+
+        $newEntry->name = $request->name;
+        $newEntry->city = $request->city;
+        $newEntry->country = $request->country;
+        $newEntry->max = $request->max;
+
+        $newEntry->save();
+
+        return redirect("/");
     }
 
     /**
