@@ -29,7 +29,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Pauline",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -43,7 +43,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Sarah",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -57,7 +57,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Samia",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -71,7 +71,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Célina",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -85,7 +85,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Adèle",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -99,7 +99,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Elise",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -113,7 +113,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Théo",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -127,7 +127,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Assma",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -141,7 +141,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Paul",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -155,7 +155,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Nathalie",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -169,7 +169,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Amina",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -183,7 +183,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Romane",
+                    "name" => "Amal",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",

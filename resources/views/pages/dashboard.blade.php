@@ -1,7 +1,7 @@
 @extends('template.main')
 @section('content')
 <section class="container">
-    <h1>Bienvenue dans votre dashboard</h1>
+    <h1 class="text-center">Bienvenue dans votre dashboard</h1>
     @include('partials.dash.dashboard1')
     @include('partials.dash.dashboard2')
     @include('partials.dash.dashboard3')

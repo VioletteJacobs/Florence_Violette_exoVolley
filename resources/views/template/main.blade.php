@@ -35,12 +35,12 @@ Nom Prénom Nom d'équipe button pour voir le show du joueur
 le nom de l'équipe du joueur est cliquable également pour aller voir le show de l'équipe avec toutes les informations !
 
 Une page Dashboard avec :
-une section ( 2 équipes remplies au hasard )
-une section ( 4 joueurs sans équipes au hasard )
-une section ( 4 joueurs avec équipe )
-une section ( 2 équipes non remplies au hasard )
-une section ( les equipes d'europes )
-une section ( les équipes hors europes )
-une section ( les joueurs qui représente leur pays( meme pays dorigine que l'équipe dans la quelle ils jouent )
-Une section 5 joueuses au hasard qui ont une équipe !
-Une section 5 joueurs homme et qui ont une équipe ! --}}
+1 section ( 2 équipes remplies au hasard )
+2 section ( 4 joueurs sans équipes au hasard )
+3 section ( 4 joueurs avec équipe )
+4 section ( 2 équipes non remplies au hasard )
+5 section ( les equipes d'europes )
+6 section ( les équipes hors europes )
+7 section ( les joueurs qui représente leur pays( meme pays dorigine que l'équipe dans la quelle ils jouent )
+8 section 5 joueuses au hasard qui ont une équipe !
+9 section 5 joueurs homme et qui ont une équipe ! --}}
