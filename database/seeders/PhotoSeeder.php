@@ -16,7 +16,7 @@ class PhotoSeeder extends Seeder
     {
         DB::table("photos")->insert(
             [
-                "url" => "anonyme.jpeg"
+                "url" => "anonyme.jpg"
             ]
             );
     }

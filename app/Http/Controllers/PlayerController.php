@@ -105,7 +105,9 @@ class PlayerController extends Controller
     public function edit($id)
     {
         $edit = Player::find($id);
-        return view ("pages.edit.updateplayer", compact("edit"));
+        $DBTeam= Team::all();
+
+        return view ("pages.edit.updateplayer", compact("edit","DBTeam"));
     }
 
     /**

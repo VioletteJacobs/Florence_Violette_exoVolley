@@ -17,10 +17,10 @@ class TeamSeeder extends Seeder
         DB::table("teams")->insert(
             [
                 [
-                    "name" => "/",
-                    "city" => "/",
-                    "country" => "/",
-                    "max" => 500
+                    "name" => "No team",
+                    "city" => "",
+                    "country" => "",
+                    "max" => 90000
 
                 ],
                 [
@@ -41,6 +41,34 @@ class TeamSeeder extends Seeder
                     "name" => "alz",
                     "city" => "Namur",
                     "country" => "Belgium",
+                    "max" => 10
+
+                ],
+                [
+                    "name" => "Truelle",
+                    "city" => "Porto",
+                    "country" => "Portugal",
+                    "max" => 10
+
+                ],
+                [
+                    "name" => "Cool",
+                    "city" => "Dakar",
+                    "country" => "Sénégal",
+                    "max" => 10
+
+                ],
+                [
+                    "name" => "Poutine",
+                    "city" => "Montréal",
+                    "country" => "Canada",
+                    "max" => 10
+
+                ],
+                [
+                    "name" => "Hotdog",
+                    "city" => "Texas city",
+                    "country" => "USA",
                     "max" => 10
 
                 ],

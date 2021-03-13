@@ -1,11 +1,11 @@
 @extends('template.main')
 @section('content')
-    <section class="container text-center">
-        <div class="card" style="width: 18rem; m-5">
+    <section class="container text-center m-5 d-flex">
+        <div class="card align-items-center" style="width: 39rem; m-0">
           @if ($show->photos->url == null)
-          <img class="card-img-top" src="{{asset("img//volley.jpeg")}}" alt="Card image cap">
+          <img class="card-img-top" style ="height: 350px" src="{{asset("storage/img/anonyme.jpg")}}" alt="Card image cap">
           @endif
-          <img class="card-img-top" src="{{asset("storage/img/".$show->photos->url)}}" alt="Card image cap">
+          <img class="card-img-top" style="height: 350px" src="{{asset("storage/img/".$show->photos->url)}}" alt="Card image cap">
 
             <div class="card-body">
 
