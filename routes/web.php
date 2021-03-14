@@ -55,12 +55,10 @@ Route::get('/dashboard', function () {
     $euCountry = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Republic of Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden'];
 
     foreach ($teams as $team) {
-        foreach ($euCountry as $item) {
-            if($team->country == $item) {
-                array_push($euTeams, $team);
-            }else{
-                array_push($notEuTeams,$team);
-            }
+        if(in_array($team->country,  $euCountry)) {
+            array_push($euTeams, $team);
+        }else{
+            array_push($notEuTeams,$team);
         }
     }
 

@@ -1,5 +1,5 @@
 <section class="container bg-dark text-white my-5">
-    <h1 class="text-center p-5" style="color: rgba(225, 133, 66)">All the players</h1>
+    <h1 class="text-center p-5" style="color: rgba(225, 133, 66)">All players</h1>
     {{-- tables des équipes avec un bouton show --}}
     <table class="table table-dark">
         <thead>

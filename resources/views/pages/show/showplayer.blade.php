@@ -1,7 +1,7 @@
 @extends('template.main')
 @section('content')
-    <section class="container text-center m-5 d-flex">
-        <div class="card align-items-center" style="width: 39rem; m-0">
+    <section class="container text-center my-5 d-flex">
+        <div class="card align-items-center w-100" >
           @if ($show->photos->url == null)
           <img class="card-img-top" style ="height: 350px" src="{{asset("storage/img/anonyme.jpg")}}" alt="Card image cap">
           @endif

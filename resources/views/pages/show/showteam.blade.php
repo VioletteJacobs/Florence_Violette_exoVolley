@@ -1,9 +1,9 @@
 @extends('template.main')
 @section('content')
-    <section class="container text-center">
-        <div class="card" style="width: 18rem;">
+    <section class="container text-center my-5">
+        <div class="card w-100 bg-dark text-white" >
             <div class="card-body">
-              <h5 class="card-title">{{$show->name}}</h5>
+              <h5 class="card-title" style="color:rgba(225, 133, 66) ">{{$show->name}}</h5>
               <p class="card-text">{{$show->city}}</p>
               <p class="card-text">{{$show->country}}</p>
               <p class="card-text">{{$show->max}}</p>

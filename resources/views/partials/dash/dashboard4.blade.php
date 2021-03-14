@@ -1,7 +1,7 @@
 <section class="container">
     <h1 class="text-center bg-dark" style="color: rgba(225, 133, 66)">équipes non-remplies du jour</h1>
     @foreach ($dispoTeam as $item)
-    <p>{{$item->name}} de {{$item-> city}}</p>
+    <p><span style="color: rgba(225, 133, 66)">{{$item->name}} </span> de {{$item->city}}</p>
         
     @endforeach
     <span>Proposer un poste à : </span>
