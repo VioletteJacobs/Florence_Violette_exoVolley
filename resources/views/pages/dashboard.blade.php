@@ -1,7 +1,7 @@
 @extends('template.main')
 @section('content')
-<section class="container">
-    <h1 class="text-center">Bienvenue dans votre dashboard</h1>
+<section class="container text-center">
+    <h1 class="text-center" style="color: rgba(225, 133, 66)">Bienvenue dans votre dashboard</h1>
     @include('partials.dash.dashboard1')
     @include('partials.dash.dashboard2')
     @include('partials.dash.dashboard3')

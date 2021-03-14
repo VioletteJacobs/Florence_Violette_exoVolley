@@ -1,8 +1,8 @@
 @extends('template.main')
 @section('content')
-<section class="container">
+<section class="container bg-dark text-white my-5  p-5 text-center">
 
-    <h1>Add a team: </h1>
+    <h1 style= "color: rgba(225, 133, 66) ">Add a team: </h1>
         {{-- message d'erreur --}}
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -15,25 +15,25 @@
         @endif
 
         {{-- form player et photo --}}
-    <form action="/teams" method="POST">
+    <form action="/teams" method="POST" >
         @csrf
         <div class="form-group">
-            <label for="">Name : </label>
-            <input type="text" name="name">
+            <label for="" >Name : </label>
+            <input type="text" name="name" class="btncreate">
         </div>
         <div class="form-group">
             <label for="">City : </label>
-            <input type="text" name="city">
+            <input type="text" name="city" class="btncreate">
         </div>
         <div class="form-group">
             <label for="">Country: </label>
-            <input type="text" name="country">
+            <input type="text" name="country" class="btncreate">
         </div>
         <div class="form-group">
             <label for="">Nombre de joueur maximum : </label>
-            <input type="text" name="max">
+            <input type="text" name="max" class="btncreate">
         </div>
-        <button class="btn btn-success" type="submit">Submit</button>
+        <button class="btn btn-success btnform" type="submit">Submit</button>
     </form>
 
 </section>

@@ -21,10 +21,10 @@ class PlayerSeeder extends Seeder
                     "age" => 26,
                     "phone" => "0485/14.25.35",
                     "email" => "doural@gmail.com",
-                    "gender" => "male",
+                    "gender" => "female",
                     "country" => "France",
                     "role" => "back",
-                    "team_id"=>"1",
+                    "team_id"=>"2",
                     "photo_id"=>"1"
 
                 ],
@@ -34,7 +34,7 @@ class PlayerSeeder extends Seeder
                     "age" => 26,
                     "phone" => "0485/14.25.35",
                     "email" => "doural@gmail.com",
-                    "gender" => "male",
+                    "gender" => "female",
                     "country" => "Brazil",
                     "role" => "back",
                     "team_id"=>"1",
@@ -51,7 +51,7 @@ class PlayerSeeder extends Seeder
                     "gender" => "femal",
                     "country" => "Belgium",
                     "role" => "back",
-                    "team_id"=>"1",
+                    "team_id"=>"2",
                     "photo_id"=>"1"
 
 
@@ -71,7 +71,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Célina",
+                    "name" => "Célin",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -99,7 +99,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Elise",
+                    "name" => "Eli",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -127,7 +127,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Assma",
+                    "name" => "Antoine",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -146,7 +146,7 @@ class PlayerSeeder extends Seeder
                     "age" => 26,
                     "phone" => "0485/14.25.35",
                     "email" => "doural@gmail.com",
-                    "gender" => "femal",
+                    "gender" => "male",
                     "country" => "Belgium",
                     "role" => "back",
                     "team_id"=>"3",
@@ -169,7 +169,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Amina",
+                    "name" => "Amin",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",
@@ -183,7 +183,7 @@ class PlayerSeeder extends Seeder
 
                 ],
                 [
-                    "name" => "Amal",
+                    "name" => "Adrien",
                     "firstname" => "doural",
                     "age" => 26,
                     "phone" => "0485/14.25.35",

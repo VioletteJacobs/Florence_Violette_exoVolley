@@ -30,7 +30,56 @@ Route::get('/dashboard', function () {
     // $DBPhoto = Photo ::all();
     $playersWith = Player::where("team_id", "!=", 1)->get();
     $playersWithout = Player::where("team_id", "=", 1)->get();
-    return view ("pages.dashboard", compact("players", "teams", "playersWith", "playersWithout"));
+
+    // Dasboard 1 : team full
+    $fullTeam = [];
+    foreach ($teams as $item) {
+
+        if (count($players->where('team_id', $item->id)) == $item->max) {
+            array_push($fullTeam, $item);
+        }
+    }
+    // Dasboard 4 : Team not full
+    $dispoTeam = [];
+
+    foreach ($teams as $item) {
+        
+        if(count($players->where("team_id", $item->id)) != $item->max){
+            array_push($dispoTeam, $item);
+        }
+    }
+
+    // Team EU
+    $euTeams = [];
+    $notEuTeams = [];
+    $euCountry = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Republic of Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden'];
+
+    foreach ($teams as $team) {
+        foreach ($euCountry as $item) {
+            if($team->country == $item) {
+                array_push($euTeams, $team);
+            }else{
+                array_push($notEuTeams,$team);
+            }
+        }
+    }
+
+
+     // Empty teams
+     $emptyTeam = [];
+     foreach ($teams as $item) {
+         if (count($players->where('team_id', $item->id)) == 0) {
+             array_push($emptyTeam, $item);
+         }
+     }
+    // Player who play for their country
+    $patriot = [];
+    foreach ($playersWith as $player) {
+        if ($player->country == $player->teams->country) {
+            array_push($patriot, $player);
+        }
+    }
+    return view ("pages.dashboard", compact("players", "teams", "playersWith", "playersWithout", "euTeams", "notEuTeams", "fullTeam", "emptyTeam", "dispoTeam", "patriot"));
 });
 
 

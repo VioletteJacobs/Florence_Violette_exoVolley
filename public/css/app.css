@@ -10002,3 +10002,43 @@ h3 {
     border-color: #dee2e6;
   }
 }
+
+/* Style bouton create */
+.btncreate {
+  border-radius: 100rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  outline: none;
+  padding: .5rem 1.5rem;
+  width: 100%;
+  transition: background-color 500ms;
+}
+.btncreate:focus {
+    border: 2px solid rgba(225, 133, 56);
+    color: #717973;
+    background-color: rgb(96, 99, 92)ff;
+}
+
+.btncreate :not(:focus):invalid {
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+}
+/* style bouton create */
+.btnform {
+  background-color: rgba(225, 133, 56);
+  border: 2px solid black;
+  border-radius: 10rem;
+  cursor: pointer;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 5px 25px;
+  position: relative;
+  transition: all 450ms;
+}
+.btnform:hover {
+  transform: scale(1.13);
+  background-color: rgba(225, 133, 66);
+  color: black;
+  border : 2px solid white
+}
