@@ -5,6 +5,11 @@
     @if ($item->max != count($item->players) && $i<2)
     
     <p><span style="color: rgba(225, 133, 66)">{{$item->name}} </span> de {{$item->city}}</p>
+    {{-- @if ($item->id === 1)
+    <p class=""><span>{{$item->name}} </span> de {{$item->city}}</p>
+    
+        
+    @endif --}}
 
     <?php $i++; ?>  
 
