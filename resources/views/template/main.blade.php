@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Volley</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 </head>
 <body>
     @include('partials.nav')

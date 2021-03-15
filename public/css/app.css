@@ -10002,6 +10002,12 @@ h3 {
     border-color: #dee2e6;
   }
 }
+#bannier{
+  background-image: url("/img/volley2.jpeg"); 
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Style bouton create */
 .btncreate {

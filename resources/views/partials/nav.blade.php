@@ -21,8 +21,13 @@
             </li>
         </div>
       </nav>
-      <div style="background-image: url({{asset('/img/volley2.jpeg')}})">
-          <h1 class="text-center p-5 h-100" style="color: rgba(225, 133, 66)">Volley</h1>
+      <div id="bannier">
+          <h1 class="text-center p-5" style="color: rgba(225, 133, 66)">Volley</h1>
+          <div id=welcome_div>
+            <p class="text-center bg-white p-5">
+              <span style="color: rgba(225, 133, 66)">Welcome in your Volley site!</span> <br> This is where you can find all yours teams and player, you can add, delete or update everthing. 
+            </p>
+          </div>
       </div>
 
 </div>
