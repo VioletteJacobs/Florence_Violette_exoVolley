@@ -25,7 +25,6 @@ class PlayerSeeder extends Seeder
                     "country" => "France",
                     "role" => "back",
                     "team_id"=>"2",
-                    "photo_id"=>"1"
 
                 ],
                 [
@@ -38,7 +37,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Brazil",
                     "role" => "back",
                     "team_id"=>"1",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -52,7 +51,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Belgium",
                     "role" => "back",
                     "team_id"=>"2",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -66,7 +65,7 @@ class PlayerSeeder extends Seeder
                     "country" => "USA",
                     "role" => "center",
                     "team_id"=>"1",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -80,7 +79,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Portugal",
                     "role" => "center",
                     "team_id"=>"1",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -94,7 +93,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Belgium",
                     "role" => "back",
                     "team_id"=>"1",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -108,7 +107,7 @@ class PlayerSeeder extends Seeder
                     "country" => "China",
                     "role" => "back",
                     "team_id"=>"2",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -122,7 +121,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Brazil",
                     "role" => "back",
                     "team_id"=>"1",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -136,7 +135,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Germany",
                     "role" => "back",
                     "team_id"=>"3",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -150,7 +149,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Belgium",
                     "role" => "back",
                     "team_id"=>"3",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -164,7 +163,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Belgium",
                     "role" => "back",
                     "team_id"=>"8",
-                    "photo_id"=>"1"
+
                     
 
                 ],
@@ -178,7 +177,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Bolivia",
                     "role" => "center",
                     "team_id"=>"6",
-                    "photo_id"=>"1"
+
 
 
                 ],
@@ -192,7 +191,7 @@ class PlayerSeeder extends Seeder
                     "country" => "Tanzania",
                     "role" => "back",
                     "team_id"=>"4",
-                    "photo_id"=>"1"
+
 
 
                 ],

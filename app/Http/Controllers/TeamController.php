@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Player;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
@@ -105,9 +106,17 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
+
     public function destroy($id)
     {
+        $players= Player::all();
         $destroy = Team::find($id);
+
+        foreach ($destroy->players as $player ) {
+            $player->team_id = 1;
+            $player->save();
+        }
+
         $destroy->delete();
         return redirect("/");
     }

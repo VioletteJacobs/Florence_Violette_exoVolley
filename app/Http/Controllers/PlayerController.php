@@ -48,16 +48,11 @@ class PlayerController extends Controller
             "gender" => "required|min:1|max:50",
             "country" => "required|min:1|max:50",
             "role" => "required|min:1|max:50",
-            // "photo" => "required|min:1|max:50",
-            // "team" => "required|min:1|max:50",
+            "team_id" => "required|min:1|max:50",
         ]);
 
-        $storephoto = New Photo;
-        $storephoto->url = $request->file("url")->hashName();
-        Storage::put("public/img/", $request->file("url"));
-        $storephoto->save();
-
         $newEntry = new Player;
+
         $newEntry->name = $request->name;
         $newEntry->firstname = $request->firstname;
         $newEntry->age = $request->age;
@@ -67,17 +62,26 @@ class PlayerController extends Controller
         $newEntry->country = $request->country;
         $newEntry->role = $request->role;
         $newEntry->team_id = $request->team_id;
-        $newEntry->photo_id = $storephoto->id;
+        
+        $storephoto = New Photo;
 
+        $newEntry->photos->url = $request->file("url")->hashName();
+        Storage::put("public/img/", $request->file("url"));
 
-
+        $storephoto->player_id = $newEntry->id;
+        $storephoto->url = $newEntry->photos->url;
+        
+        
+        
+        
         $team = Team::where('id', $request->team_id)->get();
         $player = Player::where("team_id", $request->team_id)->get();
-
-
+        
+        
         if($team[0]->max == sizeOf($player)){
             return redirect()->back()->withErrors(["The team of your choice is full, sorry!"]);
         }else{
+            $storephoto->save();
             $newEntry->save();
             return redirect("/")->with("status", "thanks, your profil has been saved!");
         };
@@ -152,10 +156,10 @@ class PlayerController extends Controller
     {
         $destroy = Player::find($id);
         $destroyPhoto = Photo::find($id);
+        // dd($destroy);
         Storage::delete("public/img/".$destroyPhoto->url);
-
         $destroy->delete();
-        $destroyPhoto->delete();
+        // $destroyPhoto->delete();
         return redirect("/");
     }
 

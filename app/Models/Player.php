@@ -10,7 +10,7 @@ class Player extends Model
     use HasFactory;
 
     public function photos(){
-        return $this->belongsTo(Photo::class, "photo_id");
+        return $this->hasMany(Photo::class, "photo_id");
     }
     
     public function teams(){
